@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    background-color: #303134;
+    color: white;
+    font-family: Arial, sand-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 180px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    max-width: 80%;
+    margin: 20px auto 0;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 1px solid #5f6368;
+    background-color: #4d5156;
+}
+
+.search-container input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.search-icon {
+    color: #9aa0a6;
+    font-size: 24px;
+    margin-right: 12px;
+    transform: rotate(-45deg);
+}
+
+.search-container:hover,
+.search-container:focus-within {
+    border-color: #8ab4f8;
+}
+
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.top-left,
+.top-right {
+    color: white;
+    font-size: 13px;
+}
+
+.top-left div:hover,
+.top-right div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.gmail,
+.images,
+.about,
+.store,
+.advertising,
+.business,
+.how-search,
+.privacy,
+.terms {
+    color: white;
+    text-decoration: none;
+}
+
+.gmail:hover,
+.images:hover,
+.about:hover,
+.store:hover,
+.advertising:hover,
+.business:hover,
+.how-search:hover,
+.privacy:hover,
+.terms:hover {
+    text-decoration: underline;
+}
+
+
+
+.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.bottom-left div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.bottom-right div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#settings-menu {
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    width: 180px;
+    padding: 12px;
+    background-color: #303134;
+    color: white;
+    border-radius: 8px;
+}
+
+.settings {
+    background: none;
+    border: none;
+    color: white;
+    font: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.settings:hover {
+    text-decoration: underline;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.search-buttons button {
+    background-color: #414347;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 60px;
+        margin-top: 120px;
+    }
+}
+
+.lucky-window {
+    display: block;
+    height: 20px;
+    overflow: hidden;
+}
+
+.lucky-phrases {
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.lucky-phrases > span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+}

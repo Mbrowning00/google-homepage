@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+    <title>Google</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Google</h1>
+    <form id="search-form" class="search-container" action="https://www.google.com/search" method="get">
+        <span class="search-icon" aria-hidden="true">&#9906;</span>
+        <input type="text" name="q" placeholder="Search Google" aria-label="Search Google">
+    </form>
+
+    <div class="search-buttons">
+        <button type="submit" form="search-form">Google Search</button>
+        <button type="button" id="lucky-button">
+            <span class="lucky-window">
+                <span class="lucky-phrases">
+                    <span>I'm Feeling Lucky</span>
+                    <span>I'm Feeling Curious</span>
+                    <span>I'm Feeling Adventurous</span>
+                    <span>I'm Feeling Hungry</span>
+                </span>
+            </span>
+        </button>
+    </div>
+
+    <div class="top-left">
+        <a class="about" href="https://about.google/">About</a>
+        <a class="store" href="https://store.google.com/">Store</a>
+    </div>
+
+    <div class="top-right">
+        <a class="gmail" href="https://mail.google.com/">Gmail</a>
+        <a class="images" href="https://www.google.com/imghp">Images</a>
+    </div>
+
+    <div class="bottom-left">
+        <a class="advertising" href="https://business.google.com/">Advertising</a>
+        <a class="business" href="https://business.google.com/us/business-profile/">Business</a>
+        <a class="how-search" href="https://www.google.com/search/howsearchworks/">How Search Works</a>
+    </div>
+
+    <div class="bottom-right">
+        <a class="privacy" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+        <a class="terms" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+        <button class="settings" id="settings-button" type="button">
+            Settings
+        </button>
+        <div id="settings-menu" hidden>
+            <p>Search settings</p>
+            <p>Appearance</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
